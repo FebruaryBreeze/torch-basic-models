@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "arc_face_config",
+  "description": "Arc-Face Config",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "feature_dim": {
+      "type": "integer"
+    },
+    "num_classes": {
+      "type": "integer"
+    },
+    "s": {
+      "type": "number",
+      "default": 64.0
+    },
+    "m": {
+      "type": "number",
+      "default": 0.5
+    }
+  },
+  "additionalProperties": false
+}

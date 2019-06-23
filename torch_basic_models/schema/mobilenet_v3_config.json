@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "mobile_net_v3_config",
+  "description": "MobileNetV3 Model Config",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "feature_dim": {
+      "type": "integer",
+      "default": 1000
+    },
+    "width_multiple": {
+      "type": "number",
+      "default": 1.0
+    },
+    "dropout_ratio": {
+      "type": "number",
+      "default": 0.0
+    },
+    "stride_list": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "default": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  "additionalProperties": false
+}

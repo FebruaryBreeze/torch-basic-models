@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "cross_entropy_loss_config",
+  "description": "Cross Entropy Loss Config",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

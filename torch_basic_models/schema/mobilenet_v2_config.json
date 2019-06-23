@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "mobile_net_v2_config",
+  "description": "MobileNetV2 Model Config",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "expansion_ratio": {
+      "type": "integer",
+      "default": 6
+    },
+    "feature_dim": {
+      "type": "integer",
+      "default": 1000
+    },
+    "width_multiple": {
+      "type": "number",
+      "default": 1.0
+    },
+    "stride_list": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "default": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "description": "five reductions in default"
+    },
+    "no_linear": {
+      "enum": [
+        "InplaceReLU",
+        "InplaceReLU6",
+        "Swish",
+        "HSwish"
+      ],
+      "default": "InplaceReLU6",
+      "description": "ReLU / ReLU6 / Swish / HSwish"
+    },
+    "dropout_ratio": {
+      "type": "number",
+      "default": 0.0
+    }
+  },
+  "additionalProperties": false
+}
